@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "url-health-monitor"
+version = "0.1.0"
+description = "A tool to check and monitor URL health with AI enhancements"
+authors = ["You"]
+packages = [{ include = "backend" }, { include = "frontend" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110.0"
+httpx = "^0.27.0"
+uvicorn = "^0.29.0"
+streamlit = "^1.32.0"
+requests = "^2.31.0"
+pydantic = "^2.5.3"
+dotenv = "^0.9.9"
+plotly = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
